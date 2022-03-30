@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+body {
+  /* background-color: rgb(251, 253, 255); */
+  /* background-color: #0086b3; */
+  background-image: url("./components/nature3.jpg");
+  background-repeat: no-repeat;
+  background-size: 160vh;
+  /* opacity: 10%; */
+  /* background-blend-mode: soft-light; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+table td {
+	border: 2px solid white;
+	width: 100px;
+	height: 100px;
+}
+
+h3{
+  color: white;
+}
+
+.btn {
+  margin: 21px;
+  /* color: white; */
+  /* background-color: rgb(31, 91, 243); */
+}
+
+p {
+  font-size: larger;
+  color: rgb(53, 252, 26);
+}

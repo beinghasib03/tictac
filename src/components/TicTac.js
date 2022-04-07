@@ -107,7 +107,7 @@ const TicTac = () => {
         </>
       )}
       <button className='btn' onClick={() => reset()}>RESET</button>
-<audio src={audio} controls autoPlay loop className='music'></audio>
+
     </div>
   );
 };

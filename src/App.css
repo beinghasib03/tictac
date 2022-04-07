@@ -38,3 +38,15 @@ p {
   font-size: larger;
   color: rgb(53, 252, 26);
 }
+
+.music {
+  width: 250px;
+  height: 40px;
+  margin-right: 25px;
+  /* background-color: red; */
+}
+
+.music audio{
+  margin-left: 0px;
+}
+

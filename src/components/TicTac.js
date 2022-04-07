@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import img from "./image.jpg"
+// import img from "./image.jpg"
+import audio from "./bollysong.mp3"
 
 const TicTac = () => {
   const [turn, setTurn] = useState('x');
@@ -78,37 +79,46 @@ const TicTac = () => {
   };
 
   return (
-    <div className='container'>
-      <table>
-        <h3> Turn: {turn}</h3>
-        <tbody>
-          {/* <img src={img} alt="" /> */}
-          <tr style={{color: "#006600", fontSize: "50px"}}>
-            <Cell num={0} />
-            <Cell num={1} />
-            <Cell num={2} />
-          </tr>
-          <tr style={{color: "#1a75ff", fontSize: "50px"}}>
-            <Cell num={3} />
-            <Cell num={4} />
-            <Cell num={5} />
-          </tr>
-          <tr style={{color: "#008080", fontSize: "50px"}}>
-            <Cell num={6} />
-            <Cell num={7} />
-            <Cell num={8} />
-          </tr>
-        </tbody>
-      </table>
-      {winner && (
-        <>
-          <p>{winner} 💃🏻 won the match 💃🏻</p>
-          <button onClick={() => handleRestart()}>Play Again</button>
-        </>
-      )}
-      <button className='btn' onClick={() => reset()}>RESET</button>
+    <>
+      <div className='container'>
+        <table>
+          <h3> Turn: {turn}</h3>
+          <tbody>
+            {/* <img src={img} alt="" /> */}
+            <tr style={{color: "#006600", fontSize: "50px"}}>
+              <Cell num={0} />
+              <Cell num={1} />
+              <Cell num={2} />
+            </tr>
+            <tr style={{color: "#1a75ff", fontSize: "50px"}}>
+              <Cell num={3} />
+              <Cell num={4} />
+              <Cell num={5} />
+            </tr>
+            <tr style={{color: "#008080", fontSize: "50px"}}>
+              <Cell num={6} />
+              <Cell num={7} />
+              <Cell num={8} />
+            </tr>
+          </tbody>
+        </table>
+        {winner && (
+          <>
+            <p>{winner} 💃🏻 won the match 💃🏻</p>
+            <button onClick={() => handleRestart()}>Play Again</button>
+          </>
+        )}
+        <button className='btn' onClick={() => reset()}>RESET</button>
+        {/* 
+      <audio>
+        <source src={audio} type='audio/mp3' />
+      </audio> */}
+        <audio src={audio} controls autoPlay loop className='music'></audio>
 
-    </div>
+
+      </div>
+
+    </>
   );
 };
 
